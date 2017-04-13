@@ -44,7 +44,6 @@ install_file() {
       ;;
     "gentoo")
       echo "installing with emerge..."
-      emerge-webrsync
       emerge --sync --quiet
       emerge --quiet ruby
       ;;
