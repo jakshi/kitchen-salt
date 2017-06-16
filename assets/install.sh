@@ -20,6 +20,7 @@ install_file() {
       ;;
     "debian")
       echo "installing with apt..."
+      packages="ruby ruby-dev rubygems"
       apt-get install -y $packages
       ;;
     "alpine")
