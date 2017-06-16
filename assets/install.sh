@@ -20,7 +20,9 @@ install_file() {
       ;;
     "debian")
       echo "installing with apt..."
-      packages="ruby ruby-dev rubygems"
+      apt-add-repository ppa:brightbox/ruby-ng
+      sudo apt-get update
+      packages="ruby2.4 ruby2.4-dev"
       apt-get install -y $packages
       ;;
     "alpine")
