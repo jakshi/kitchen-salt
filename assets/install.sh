@@ -20,7 +20,7 @@ install_file() {
       ;;
     "debian")
       echo "installing with apt..."
-      apt-add-repository ppa:brightbox/ruby-ng
+      apt-add-repository -y ppa:brightbox/ruby-ng
       sudo apt-get update
       packages="ruby2.4 ruby2.4-dev"
       apt-get install -y $packages
